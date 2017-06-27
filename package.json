@@ -9,5 +9,15 @@
     "start": "node app.js"
   },
   "author": "Gabriel Peña",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "helmet": "^3.6.1",
+    "mongoose": "^4.11.0",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
