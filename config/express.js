@@ -3,11 +3,13 @@
  */
 
 const express = require('express');
+const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 
 exports = module.exports = function (app) {
+  app.use(cors());
 
   // Apache style logs
   app.use(morgan('dev'));
