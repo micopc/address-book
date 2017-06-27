@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('http');
 const mongoose = require('mongoose');
 
-mongoose.connect('process.env.MONGODB_URI');
+mongoose.connect(process.env.MONGODB_URI);
 
 const config = require('./config/environment');
 
