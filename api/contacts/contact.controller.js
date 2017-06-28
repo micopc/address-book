@@ -31,3 +31,13 @@ exports.create = (req, res, next) => {
     return res.json({ status: 'success', data: contact });
   })
 }
+
+exports.destroy = (req, res, next) => {
+  Contact.remove({ _id: req.params.id }, function (err) {
+    if (err) {
+      return next(err);
+    }
+
+    return res.json({ status: 'success' });
+  });
+}
